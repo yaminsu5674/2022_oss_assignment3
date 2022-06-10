@@ -11,5 +11,5 @@ RUN pip3 install uvicorn
 EXPOSE 8080
 WORKDIR /root
 RUN git clone https://github.com/yaminsu5674/2022_oss_assignment3.git
-WORKDIR /root/oss_assignment3
+WORKDIR /root/2022_oss_assignment3
 CMD ["uvicorn", "minsu_program:app", "--reload","--host", "0.0.0.0", "--port", "8080"]
